@@ -4,7 +4,20 @@
     </head>
     <body>
         <script>
-          
+          function greetingMessage(name1,name2,message){
+              if(name2){
+                return ("Hi,"+name1+"\n"+message+ "\n"+"this message send From"+ name2);
+              }   
+              else{
+                return("Hi,"+name1+"\n"+message+ "\n"+"this message send From Unknown person.");
+          }
+          }
+
+          var Sender=prompt("Enter Your Name");
+          var Reciver=prompt("Enter Reciver Name");
+          var Message=prompt("Enter Your Message");
+          var combain=greetingMessage(Reciver,Sender,Message);
+          alert(combain);
         </script>
     </body>
 </html>
