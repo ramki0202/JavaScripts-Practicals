@@ -1,10 +1,13 @@
+var person = new Object();
+console.log( person instanceof Object);
+person.name="Ramki";
+person.age="26";
+person.place="Gudalur";
+console.log(person.name,person.age,person.place);
+person.greeting= function wish()
+{
 
-function add(a,b) {
-     c=a+b;
-     return c;
+     console.log("Hi"+" " + person.name + " "+"Good Mrng" );
 }
 
-var  opt1=parseInt(prompt("enter num1",""));
-var opt2=parseInt(prompt("enter num2",""));
-var ans=add(opt1,opt2);
-alert(ans);
+person.greeting();
