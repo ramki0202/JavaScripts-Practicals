@@ -7,7 +7,7 @@ console.log(person.name,person.age,person.place);
 person.greeting= function wish()
 {
 
-     console.log("Hi"+" " + person.name + " "+"Good Mrng" );
+     console.log("Hi"+" " +person.name+ " "+"Good Mrng" );
 }
 
 person.greeting();
