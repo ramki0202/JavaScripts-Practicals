@@ -42,7 +42,7 @@ var employee1={};
 Object.defineProperty(employee1,'name',{
      configurable:true,
      enumerable:true,
-     writable:true,
+     writable:false,
      value:'Ramki'
 });
 
