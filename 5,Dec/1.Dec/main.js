@@ -25,3 +25,27 @@ obj1.age="26";
 obj2.plc="GDR";
 console.log('Obj1 ',obj1);
 console.log('Obj2 ',obj2);
+
+
+
+
+var employee = {
+name : 'ramki',
+age : 27,
+place :'CBE'
+}
+
+console.log("Obj3 " ,employee);
+
+var employee1={};
+
+Object.defineProperty(employee1,'name',{
+     configurable:true,
+     enumerable:true,
+     writable:true,
+     value:'Ramki'
+});
+
+employee1.name="Geetha";
+
+console.log("Obj4 ", employee1.name);
