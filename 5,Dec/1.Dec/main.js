@@ -11,3 +11,17 @@ person.greeting= function wish()
 }
 
 person.greeting();
+
+
+var num1=10;
+var num2=num1;
+var obj1= new Object();
+var obj2=obj1;
+
+console.log('Num1: ', num1);
+console.log('Num2: ', num2);
+obj1.name="Ramki";
+obj1.age="26";
+obj2.plc="GDR";
+console.log('Obj1 ',obj1);
+console.log('Obj2 ',obj2);
