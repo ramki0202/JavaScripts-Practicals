@@ -1,51 +1,16 @@
-var person = new Object();
-console.log( person instanceof Object);
-person.name="Ramki";
-person.age="26";
-person.place="Gudalur";
-console.log(person.name,person.age,person.place);
-person.greeting= function wish()
-{
-
-     console.log("Hi"+" " +person.name+ " "+"Good Mrng" );
+function Employee(name,destignation,salary){
+     this.name = name;
+     this.destignation = destignation;
+     this.salary = salary;
 }
 
-person.greeting();
+var employee1= new Employee('Ramki','devleloper',75000);
+console.log(employee1);
+
+var employee2= new Employee('kumar','director',85000);
+console.log(employee2);
+
+var employee3= new Employee('Sathees','Machanic',95000);
+console.log(employee3);
 
 
-var num1=10;
-var num2=num1;
-var obj1= new Object();
-var obj2=obj1;
-
-console.log('Num1: ', num1);
-console.log('Num2: ', num2);
-obj1.name="Ramki";
-obj1.age="26";
-obj2.plc="GDR";
-console.log('Obj1 ',obj1);
-console.log('Obj2 ',obj2);
-
-
-
-
-var employee = {
-name : 'ramki',
-age : 27,
-place :'CBE'
-}
-
-console.log("Obj3 " ,employee);
-
-var employee1={};
-
-Object.defineProperty(employee1,'name',{
-     configurable:true,
-     enumerable:true,
-     writable:false,
-     value:'Ramki'
-});
-
-employee1.name="Geetha";
-
-console.log("Obj4 ", employee1.name);
