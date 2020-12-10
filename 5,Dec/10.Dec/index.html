@@ -5,8 +5,23 @@
         <script src="main.js"></script>
     </head>
     <body>
-        <button onclick='document.getElementById("off-bulp").src="images/on.png"'>On</button>
-        <img id="off-bulp" src="images/off.png" alt="" width="140px" height="200px">
+        <div>
+
+            <button onclick='document.getElementById("off-bulp").src="images/on.png"'>On</button>
+        <img id="off-bulp" src="images/off.png" alt="" width="280px" height="400px">
         <button onclick='document.getElementById("off-bulp").src="images/off.png"'>Off</button>
+
+        </div>
+        <div>
+            <p id="seyal">On of the best word is seyal</p>
+        <button onclick='document.getElementById("seyal").style.display="none"'>close</button>
+        </div>
+        
+        <div>
+            <button onclick='document.getElementById("seyal-show").style.display="block"'>show</button>
+
+        <p id="seyal-show" style="display: none;">On of the best word is seyal</p>
+        </div>
+        
     </body>
 </html>
