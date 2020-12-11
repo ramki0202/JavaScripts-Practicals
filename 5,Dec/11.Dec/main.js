@@ -4,6 +4,3 @@ function bulpOn(){
     function bulpOff(){
     document.getElementById("off-bulp").src="images/off.png";
     }
-
-
-    
