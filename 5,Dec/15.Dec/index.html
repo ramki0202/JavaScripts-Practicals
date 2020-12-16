@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="main.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div id="renderList"></div>
+    </body>
+    <script>
+        (function(){
+            var ul = document.createElement('ul');
+            ul.setAttribute('id','proList');
+    
+            productList = ['Electronics Watch','House wear Items','Kids wear','Women Fashion'];
+    
+            document.getElementById('renderList').appendChild(ul);
+            productList.forEach(renderProductList);
+    
+            function renderProductList(element, index, arr) {
+                var li = document.createElement('li');
+                li.setAttribute('class','item');
+    
+                ul.appendChild(li);
+    
+                li.innerHTML=li.innerHTML + element;
+            }
+        })();
+    </script>
+</html>
