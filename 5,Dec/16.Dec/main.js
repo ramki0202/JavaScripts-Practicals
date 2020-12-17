@@ -1,17 +1,6 @@
-var test=document.createElement('section');
-test.setAttribute('id','test');
-
-var ul=document.createElement('ul');
-
-
-document.body.appendChild(test);
-test.appendChild(ul);
-
-for (var i=0; i<array.length; i++){
-
-    var li=document.createElement('li');
-
-    ul.appendChild(li);
-    li.innerHTML=li.innerHTML + array[i];
-
+window.onload = function add(){
+    var x=10;
+    var y=20;
+    var z=x+y;
+    document.getElementById("test").innerHTML;
 }

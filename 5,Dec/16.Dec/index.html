@@ -7,24 +7,13 @@
     <body>
         <div id="renderList"></div>
     </body>
+    <p id="test"> </p>
     <script>
-        (function(){
-            var ul = document.createElement('ul');
-            ul.setAttribute('id','proList');
-    
-            productList = ['Electronics Watch','House wear Items','Kids wear','Women Fashion'];
-    
-            document.getElementById('renderList').appendChild(ul);
-            productList.forEach(renderProductList);
-    
-            function renderProductList(element, index, arr) {
-                var li = document.createElement('li');
-                li.setAttribute('class','item');
-    
-                ul.appendChild(li);
-    
-                li.innerHTML=li.innerHTML + element;
-            }
-        })();
+    window.onload = function add(){
+    var x=10;
+    var y=20;
+    var z=x+y;
+    document.getElementById("test").innerHTML;
+}
     </script>
 </html>
