@@ -1,6 +1,15 @@
-function display(n,a){
-this.name=n;
-this.age=a;
-}
-var s1 = new display("ramki",26);
-document.getElementById("demo").innerHTML= "Person Name : " +s1.name + "<br> Person Age IS : " +s1.age;
+const docs = [{
+    id: "FgrbV2NTp72ie6xj",
+    name: "Joe"
+  }, {
+    id: "agfadsfasdfq23",
+    name: "Fred"
+  }];
+  
+  docs.forEach(function(d) {
+    document.getElementById('result').innerHTML += `<li onclick="insert('${d.id}')">${d.name}</li>`
+  });
+  
+  function insert(id) {
+    alert(id + " Inserted")
+  }
