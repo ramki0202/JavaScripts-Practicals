@@ -1,11 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="stylesheet" href="main.css">
-        
-    </head>
-    <body>
-   <p id="demo">  </p>
-   <script src="main.js"></script>
- 
+<head>
+    <style>
+    body button{
+      margin: 20px 0px 0px 45%;
+  }
+  .random{
+   margin: 20px 0px 0px 40%;    font-size: 32px
+  }
+  
+</style>
+</head>  
+<body >
+
+  
+    <p id="displayDrink" class="text-center"></p>
+
+
+
+
+  <script>
+    var drinks = [
+    "SRBqwer2", 
+    "SRBdjkjs", 
+    "SRB234sf",
+    "SRB15ew3",
+    "SRBsefwe",
+    "SRB975fe",
+    "SRB2sdfe",
+    "SRB6fgbj",
+
+  ];
+  
+  function getRandomDrink() {
+    const randomDrink = drinks[Math.floor(Math.random() * drinks.length)];
+    document.getElementById("displayDrink").innerHTML = randomDrink;
+  }
+
+  var display = getRandomDrink();
+  </script>
+  
+<script src="main.js"></script>
+</body>
 </html>
