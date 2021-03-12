@@ -1,4 +1,4 @@
-const country = "India";
+let country = "India";
 const continent = "Asia";
 let population = 170000000;
 
@@ -23,6 +23,10 @@ const finlandPopulation = 6000000;
 
 console.log(finlandPopulation > population);
 
-let discription = "Tamilnadu is in India and its 7 Millions of people speaking Tamil Language";
+let discription = "Tamilnadu is in" + " " + country + " " + "and its" + " " + population + " of people speaking" + " " + language + " " + "Language";
+
+console.log(discription);
+
+discription = `Tamilnadu is in ${country} and its ${population} of people speaking ${language} language 🎂`;
 
 console.log(discription);
