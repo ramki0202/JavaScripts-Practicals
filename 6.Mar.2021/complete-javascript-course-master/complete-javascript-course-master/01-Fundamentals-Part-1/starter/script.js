@@ -1,4 +1,4 @@
-var hero = "Ramki";
-var heroine = "Geetha";
+// var hero = "Ramki";
+// var heroine = "Geetha";
 
-alert(hero + " " + "weds" + " " + heroine);
+// alert(hero + " " + "weds" + " " + heroine);
