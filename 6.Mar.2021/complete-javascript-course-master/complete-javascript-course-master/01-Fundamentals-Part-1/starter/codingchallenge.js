@@ -45,6 +45,27 @@ else if ((dolpinsScroreAvg === kollasScoreAvg) > 100) {
 }
 else {
     console.log("No one Win this competion...");
+}
+
+let billValue = parseInt(prompt("Enter your Bill Value"));
+let tip;
+let totalBillvalue;
+
+if (billValue >= 50 || billValue <= 300) {
+    tip = billValue - (billValue * 85) / 100;
+    totalBillvalue = billValue + tip;
+    alert(`The bill was ${billValue}, the tip was ${tip}, and the total value 
+    ${totalBillvalue}`);
+} else {
+    tip = billValue - (billValue * 80) / 100;
+    totalBillvalue = billValue + tip;
+    alert(`The bill was ${billValue}, the tip was ${tip}, and the total value 
+    ${totalBillvalue}`);
 }*/
 
+let billValue = parseInt(prompt("Enter your Bill Value"));
+let tip = billValue >= 50 || billValue <= 300 ? (billValue - (billValue * 85) / 100) : (billValue - (billValue * 80) / 100);
+let totalBillvalue = billValue + tip;
 
+alert(`The bill was ${billValue}, the tip was ${tip}, and the total value 
+${totalBillvalue}`);
