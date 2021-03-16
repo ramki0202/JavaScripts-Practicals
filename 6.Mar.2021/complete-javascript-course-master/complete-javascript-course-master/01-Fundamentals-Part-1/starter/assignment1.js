@@ -1,6 +1,7 @@
+
 let country = "India";
 const continent = "Asia";
-let population = 170000000;
+let population = 30000000;
 
 console.log(country);
 console.log(continent);
@@ -30,3 +31,13 @@ console.log(discription);
 discription = `Tamilnadu is in ${country} and its ${population} of people speaking ${language} language 🎂`;
 
 console.log(discription);
+
+if (population < finlandPopulation) {
+    console.log(`Your ${country} population( ${population}) is normal`);
+} else {
+    console.log(`Your ${country} population( ${population}) is above finladnd population`);
+}
+
+// 4, 617,23,false,45,
+
+
