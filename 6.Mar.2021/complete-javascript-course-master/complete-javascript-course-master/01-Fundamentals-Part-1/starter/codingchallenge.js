@@ -13,22 +13,38 @@ else {
     console.log(`John's BMI(${johnHigherBMI}) is higher than Mark's BMI(${markHigherBMI})`);
 }*/
 
-const dolpinScore1 = 98;
-const dolpinScore2 = 108;
-const dolpinScore3 = 89;
-const kollasScore1 = 88;
-const kollasScore2 = 91;
-const kollasScore3 = 110;
+const dolpinScore1 = 97;
+const dolpinScore2 = 112;
+const dolpinScore3 = 81;
+
+const kollasScore1 = 109;
+const kollasScore2 = 95;
+const kollasScore3 = 86;
 
 const dolpinScrore = dolpinScore1 + dolpinScore2 + dolpinScore3;
 const kollasScore = kollasScore1 + kollasScore2 + kollasScore3;
 
 const dolpinsScroreAvg = dolpinScrore / 3;
 const kollasScoreAvg = kollasScore / 3;
-if (dolpinsScroreAvg > kollasScoreAvg) {
-    console.log("The Winner of this competion is Dolpins ");
-} else {
-    console.log("The Winner of this competion is Kollas ");
+
+const minimumScore = 100;
+console.log(dolpinsScroreAvg, kollasScoreAvg);
+
+if ((dolpinsScroreAvg > kollasScoreAvg) && (dolpinsScroreAvg > minimumScore) && (dolpinsScroreAvg !== minimumScore)) {
+    console.log(`The Winner of this competion is Dolpins it has ${dolpinsScroreAvg} points`);
+
+} else if ((kollasScoreAvg > dolpinsScroreAvg) && (kollasScoreAvg > minimumScore) && (kollasScoreAvg !== minimumScore)
+) {
+    console.log(`The Winner of this competion is Kollas it has ${kollasScoreAvg} points`);
+} else if ((dolpinsScroreAvg === minimumScore) || (kollasScoreAvg === minimumScore)) {
+    console.log("Draw this Match..!")
+}
+
+else if ((dolpinsScroreAvg === kollasScoreAvg) > 100) {
+    console.log("both are win..!");
+}
+else {
+    console.log("No one Win this competion...");
 }
 
 
