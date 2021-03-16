@@ -11,7 +11,7 @@ if (markHigherBMI > johnHigherBMI) {
 }
 else {
     console.log(`John's BMI(${johnHigherBMI}) is higher than Mark's BMI(${markHigherBMI})`);
-}*/
+}
 
 const dolpinScore1 = 97;
 const dolpinScore2 = 112;
@@ -45,6 +45,6 @@ else if ((dolpinsScroreAvg === kollasScoreAvg) > 100) {
 }
 else {
     console.log("No one Win this competion...");
-}
+}*/
 
 
