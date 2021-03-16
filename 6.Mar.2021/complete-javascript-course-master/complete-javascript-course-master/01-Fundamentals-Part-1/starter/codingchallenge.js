@@ -15,7 +15,7 @@ else {
 
 const dolpinScore1 = 97;
 const dolpinScore2 = 112;
-const dolpinScore3 = 81;
+const dolpinScore3 = 106;
 
 const kollasScore1 = 109;
 const kollasScore2 = 95;

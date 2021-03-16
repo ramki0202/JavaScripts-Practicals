@@ -2,6 +2,7 @@
 // var heroine = "Geetha";
 
 // alert(hero + " " + "weds" + " " + heroine);
+/*
 let day = prompt("Enter the day..!");
 
 switch (day) {
@@ -32,4 +33,4 @@ switch (day) {
         alert("Enjoy Weekend...!");
     default:
         alert("Enter correct day..!");
-}
+}*/
