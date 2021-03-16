@@ -63,9 +63,20 @@ if (billValue >= 50 || billValue <= 300) {
     ${totalBillvalue}`);
 }*/
 
+
 let billValue = parseInt(prompt("Enter your Bill Value"));
-let tip = billValue >= 50 || billValue <= 300 ? (billValue - (billValue * 85) / 100) : (billValue - (billValue * 80) / 100);
+let tip = (billValue >= 50 && billValue <= 300) ? (billValue - (billValue * 85) / 100) : (billValue - (billValue * 80) / 100);
+
+console.log(tip);
+
+let percent;
+if (tip === (billValue - (billValue * 85) / 100)) {
+    percent = "15%";
+} else {
+    percent = "20%";
+}
+
 let totalBillvalue = billValue + tip;
 
-alert(`The bill was ${billValue}, the tip was ${tip}, and the total value 
+alert(`The bill was ${billValue}, the tip was ${tip} ${percent}, and the total value
 ${totalBillvalue}`);
