@@ -38,6 +38,6 @@ if (population < finlandPopulation) {
     console.log(`Your ${country} population( ${population}) is above finladnd population`);
 }
 
-//316.25  46 494.5
+
 
 
