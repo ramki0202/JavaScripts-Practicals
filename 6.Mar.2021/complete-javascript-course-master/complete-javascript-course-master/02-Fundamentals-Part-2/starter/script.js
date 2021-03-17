@@ -11,6 +11,7 @@ marraige();
 marraige();
 marraige();
 marraige();
+*/
 
 // function diclaration:
 function calcAge1(year) {
@@ -27,4 +28,7 @@ calAge2 = function (year) {
 const age2 = calcAge1(1999);
 console.log(age2);
 
-*/
+const calAge3 = year => 2021 - year;
+
+const age3 = calAge2(2019);
+console.log(age3);
