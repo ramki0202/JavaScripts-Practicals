@@ -33,8 +33,8 @@ const calAge3 = year => 2021 - year;
 
 const age3 = calAge2(2019);
 console.log(age3);
-*/
-// Retairment left Calculator: 
+
+// Retairment left Calculator:
 
 const retairmentCalculator = (year, name) => {
     const age = 2021 - year;
@@ -43,4 +43,4 @@ const retairmentCalculator = (year, name) => {
 }
 
 const calculator = retairmentCalculator(1994, "Ramki");
-console.log(calculator);
+console.log(calculator);*/
