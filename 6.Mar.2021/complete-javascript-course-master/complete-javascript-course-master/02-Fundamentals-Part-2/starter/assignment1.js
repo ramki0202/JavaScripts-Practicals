@@ -88,3 +88,18 @@ alert(countryReturn);
 
 countryReturn = describeCountry("USA", "520000", "NewYork");
 alert(countryReturn);*/
+
+function percentageOfWorld1(population) {
+    let worldPopulation = 7900;
+    return (population / worldPopulation) * 100;
+}
+
+const country1 = percentageOfWorld1(250);
+console.log(country1);
+
+const percentageOfWorld2 = function (population) {
+    let worldPopulation = 7900;
+    return (population / worldPopulation) * 100;
+}
+const country2 = percentageOfWorld2(250);
+console.log(country2);

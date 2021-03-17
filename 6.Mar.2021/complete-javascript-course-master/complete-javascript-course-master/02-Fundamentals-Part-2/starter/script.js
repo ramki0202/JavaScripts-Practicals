@@ -10,7 +10,7 @@ marraige();
 marraige();
 marraige();
 marraige();
-marraige();*/
+marraige();
 
 // function diclaration:
 function calcAge1(year) {
@@ -27,3 +27,4 @@ calAge2 = function (year) {
 const age2 = calcAge1(1999);
 console.log(age2);
 
+*/
