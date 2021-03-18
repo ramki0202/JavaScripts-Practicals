@@ -48,6 +48,7 @@ else {
     console.log("No one Win this competion...");
 }
 
+
 let billValue = parseInt(prompt("Enter your Bill Value"));
 let tip;
 let totalBillvalue;
@@ -110,3 +111,33 @@ function checkWinner(avgDolhins, avgKoalas) {
 
 checkWinner(dolphinsAvgScore, kollasAvgScore);
 */
+
+
+
+
+function calcTip(billValue) {
+
+    let tip;
+    let totalBillvalue;
+    if (billValue >= 50 && billValue <= 300) {
+        tip = billValue - (billValue * 85) / 100;
+        totalBillvalue = billValue + tip;
+        console.log(`The bill was ${billValue}, the tip was ${tip}, and the total value
+        ${totalBillvalue}`);
+    } else {
+        tip = billValue - (billValue * 80) / 100;
+        totalBillvalue = billValue + tip;
+        console.log(`The bill was ${billValue}, the tip was ${tip}, and the total value ${totalBillvalue}`);
+    }
+
+    return tip;
+}
+
+calcTip(100);
+const bills = [125, 555, 44];
+const tips = [calcTip(bills[0]), calcTip(bills[1]), calcTip(bills[2])]
+
+console.log(tips);
+
+const total = [bills[0], bills[1], bills[2]];
+console.log(total);
