@@ -121,6 +121,8 @@ console.log(describePopulation("India", 1114));
 console.log(describePopulation("china", 1441));
 console.log(describePopulation("USA", 332));
 */
+
+/*
 const country = "India";
 function percentageOfWorld1(population) {
     let worldPopulation = 7900;
@@ -150,3 +152,7 @@ console.log(neighbours);
 if (!neighbours.includes('Germany')) {
     console.log("Probably not a central European country :D");
 }
+
+neighbours[neighbours.indexOf('Srilanka')] = 'Republic of Sweden';
+
+console.log(neighbours);*/
