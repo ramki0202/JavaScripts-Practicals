@@ -87,7 +87,7 @@ countryReturn = describeCountry("Srilanka", "100000", "kolumbu");
 alert(countryReturn);
 
 countryReturn = describeCountry("USA", "520000", "NewYork");
-alert(countryReturn);*/
+alert(countryReturn);
 
 //function declaration
 function percentageOfWorld1(population) {
@@ -120,3 +120,4 @@ let describePopulation = (country, population) => `${country} has ${population} 
 console.log(describePopulation("India", 1114));
 console.log(describePopulation("china", 1441));
 console.log(describePopulation("USA", 332));
+*/

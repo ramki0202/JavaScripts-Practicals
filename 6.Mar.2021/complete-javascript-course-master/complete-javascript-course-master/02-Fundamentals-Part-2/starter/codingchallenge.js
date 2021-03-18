@@ -1,3 +1,4 @@
+
 /*let markMass = 78;
 let markHeight = 1.69;
 const markHigherBMI = (markMass) / (markHeight ** 2);
@@ -81,3 +82,25 @@ let totalBillvalue = billValue + tip;
 alert(`The bill was ${billValue}, the tip was ${tip} ${percent}, and the total value
 ${totalBillvalue}`);
 */
+
+const dolphinsScore1 = 44;
+const dolphinsScore2 = 23;
+const dolphinsScore3 = 71;
+const kollasScore1 = 65;
+const kollasScore2 = 54;
+const kollasScore3 = 49;
+
+const calcAverage = (Score1, Score2, Score3) => (Score1 + Score2 + Score3) / 3;
+
+const dolphinsAvgScore = calcAverage(dolphinsScore1, dolphinsScore2, dolphinsScore3)
+const kollasAvgScore = calcAverage(kollasScore1, kollasScore2, kollasScore3)
+
+function checkWinner(avgDolhins, avgKoalas) {
+    if (avgDolhins >= 2 * avgKoalas) {
+        console.log(`Dolphins win ${avgDolhins} vs ${avgKoalas}`);
+    }
+    else {
+        console.log(`kollas win ${avgKoalas} vs ${avgDolhins}`);
+    }
+
+}
