@@ -81,14 +81,14 @@ let totalBillvalue = billValue + tip;
 
 alert(`The bill was ${billValue}, the tip was ${tip} ${percent}, and the total value
 ${totalBillvalue}`);
-*/
 
-const dolphinsScore1 = 44;
-const dolphinsScore2 = 23;
-const dolphinsScore3 = 71;
-const kollasScore1 = 65;
-const kollasScore2 = 54;
-const kollasScore3 = 49;
+
+const dolphinsScore1 = 85;
+const dolphinsScore2 = 54;
+const dolphinsScore3 = 41;
+const kollasScore1 = 23;
+const kollasScore2 = 34;
+const kollasScore3 = 27;
 
 const calcAverage = (Score1, Score2, Score3) => (Score1 + Score2 + Score3) / 3;
 
@@ -97,10 +97,16 @@ const kollasAvgScore = calcAverage(kollasScore1, kollasScore2, kollasScore3)
 
 function checkWinner(avgDolhins, avgKoalas) {
     if (avgDolhins >= 2 * avgKoalas) {
-        console.log(`Dolphins win ${avgDolhins} vs ${avgKoalas}`);
+        console.log(`Dolphins win (${avgDolhins} vs ${avgKoalas})`);
+    }
+    else if (avgKoalas >= 2 * avgDolhins) {
+        console.log(`kollas win (${avgKoalas} vs ${avgDolhins})`);
     }
     else {
-        console.log(`kollas win ${avgKoalas} vs ${avgDolhins}`);
+        console.log(`No One Win the trophy🏆`);
     }
 
 }
+
+checkWinner(dolphinsAvgScore, kollasAvgScore);
+*/
