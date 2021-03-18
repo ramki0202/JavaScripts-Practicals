@@ -43,4 +43,15 @@ const retairmentCalculator = (year, name) => {
 }
 
 const calculator = retairmentCalculator(1994, "Ramki");
-console.log(calculator);*/
+console.log(calculator);
+
+const cutFruitPiece = function (fruit) {
+    return fruit * 4;
+}
+
+const fruitCutsCount = function (apple, orange) {
+    let applecuts = cutFruitPiece(apple);
+    let orangecuts = cutFruitPiece(orange);
+    return `juice with ${applecuts} of apple and ${orangecuts} of orange`;
+}
+console.log(fruitCutsCount(2, 3));*/
