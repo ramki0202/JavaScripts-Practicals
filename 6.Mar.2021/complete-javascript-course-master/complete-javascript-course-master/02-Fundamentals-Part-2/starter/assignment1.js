@@ -121,3 +121,32 @@ console.log(describePopulation("India", 1114));
 console.log(describePopulation("china", 1441));
 console.log(describePopulation("USA", 332));
 */
+const country = "India";
+function percentageOfWorld1(population) {
+    let worldPopulation = 7900;
+    return (population / worldPopulation) * 100;
+}
+
+const populations = [203, 1234, 134, 532];
+console.log(populations.length === 4);
+
+console.log(populations);
+const percentages = percentageOfWorld1(populations[0]);
+console.log(percentages);
+const percentages1 = percentageOfWorld1(populations[1]);
+console.log(percentages1);
+const percentages2 = percentageOfWorld1(populations[2]);
+console.log(percentages2);
+const percentages3 = percentageOfWorld1(populations[3]);
+console.log(percentages3);
+
+const neighbours = ['Srilanka', 'Bangaladesh', 'Nepal'];
+console.log(neighbours);
+neighbours.push('Utopia');
+console.log(neighbours);
+neighbours.pop();
+console.log(neighbours);
+
+if (!neighbours.includes('Germany')) {
+    console.log("Probably not a central European country :D");
+}
