@@ -211,7 +211,10 @@ myCountry = {
     population: 110,
     neighbour: ['Srilanka', 'Mianmar', 'Nepal'],
     describe: function () {
-        return this.countryDescribe = `${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people,${myCountry.neighbour.length} neighboring countries and a capital called ${myCountry.capital}`
+        return this.countryDescribe = `${this.country} has ${this.population} million ${this.language}-speaking people,${this.neighbour.length} neighboring countries and a capital called ${this.capital}`
+    },
+    checkIsland: function () {
+        return this.isIsland = this.neighbour ? true : false
     }
 }
 /*Finland has 6 million finnish-speaking people, 3 neighbouring countries 
@@ -219,9 +222,10 @@ and a capital called Helsinki.'
 //output:
 India has 110 million Tamil-speaking people,3 neighboring countries and a capital called Chennai*/
 
-myCountry.population = 120;
+console.log(myCountry.checkIsland());
+// console.log(myCountry.describe());
 
 
-console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people,${myCountry.neighbour.length} neighboring countries and a capital called ${myCountry.capital}`)
-myCountry['population'] = 118;
-console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people,${myCountry.neighbour.length} neighboring countries and a capital called ${myCountry.capital}`)
+/* console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people,${myCountry.neighbour.length} neighboring countries and a capital called ${myCountry.capital}`)
+ myCountry['population'] = 118;
+ console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people,${myCountry.neighbour.length} neighboring countries and a capital called ${myCountry.capital}`)*/
