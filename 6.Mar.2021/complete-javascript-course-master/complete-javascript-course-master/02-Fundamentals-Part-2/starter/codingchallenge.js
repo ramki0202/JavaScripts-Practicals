@@ -142,3 +142,6 @@ console.log(tips);
 const total = [bills[0], bills[1], bills[2]];
 console.log(total);
 */
+
+
+// Coding Challenge #3

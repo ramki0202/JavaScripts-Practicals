@@ -200,7 +200,7 @@ const person = {
 
 
 console.log(`${person.firstName} is ${person.calcAge()} years old ${person.job}, and ${person.genderStatus()} has ${person.JobStatus()}`);
-*/
+
 
 
 //LECTURE: Introduction to Objects
@@ -217,13 +217,13 @@ myCountry = {
         return this.isIsland = this.neighbour ? true : false
     }
 }
-/*Finland has 6 million finnish-speaking people, 3 neighbouring countries 
+/*Finland has 6 million finnish-speaking people, 3 neighbouring countries
 and a capital called Helsinki.'
 //output:
-India has 110 million Tamil-speaking people,3 neighboring countries and a capital called Chennai*/
+India has 110 million Tamil-speaking people,3 neighboring countries and a capital called Chennai
 
 console.log(myCountry.checkIsland());
-// console.log(myCountry.describe());
+// console.log(myCountry.describe());*/
 
 
 /* console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people,${myCountry.neighbour.length} neighboring countries and a capital called ${myCountry.capital}`)
