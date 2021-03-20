@@ -110,7 +110,7 @@ function checkWinner(avgDolhins, avgKoalas) {
 }
 
 checkWinner(dolphinsAvgScore, kollasAvgScore);
-*/
+
 
 
 
@@ -141,3 +141,4 @@ console.log(tips);
 
 const total = [bills[0], bills[1], bills[2]];
 console.log(total);
+*/
