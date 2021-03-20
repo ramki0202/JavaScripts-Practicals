@@ -201,3 +201,19 @@ const person = {
 
 console.log(`${person.firstName} is ${person.calcAge()} years old ${person.job}, and ${person.genderStatus()} has ${person.JobStatus()}`);
 */
+
+
+//LECTURE: Introduction to Objects
+myCountry = {
+    country: 'India',
+    capital: 'Chennai',
+    language: 'Tamil',
+    population: 110,
+    neighbour: ['Srilanka', 'Mianmar', 'Nepal']
+}
+/*Finland has 6 million finnish-speaking people, 3 neighbouring countries 
+and a capital called Helsinki.'
+//output:
+India has 110 million Tamil-speaking people,3 neighboring countries and a capital called Chennai*/
+
+console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people,${myCountry.neighbour.length} neighboring countries and a capital called ${myCountry.capital}`)
