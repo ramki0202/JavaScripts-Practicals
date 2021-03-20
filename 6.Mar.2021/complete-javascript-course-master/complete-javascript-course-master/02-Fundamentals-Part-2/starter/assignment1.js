@@ -156,25 +156,44 @@ if (!neighbours.includes('Germany')) {
 neighbours[neighbours.indexOf('Srilanka')] = 'Republic of Sweden';
 
 console.log(neighbours);*/
-const Ramki = {
+
+/*
+// Object Methods with Perosn discribe
+const person = {
     firstName: 'Ramki',
     lastName: 'Yogalingam',
     birthYeah: 1994,
+    gender: true,
     job: 'Web Developer',
     friends: ['Ramesh', 'Eniya', 'Jamal'],
     driverLicense: true,
 
+
     calcAge: function () {
         this.age = 2021 - this.birthYeah;
         return this.age;
+    },
+    JobStatus: function () {
+        if (this.driverLicense) {
+            return this.jobPAss = "a driver's lisence"
+        } else {
+            return this.jobPAss = "no driver's license"
+        }
+    },
+    genderStatus: function () {
+        if (this.gender) {
+            return this.genderpass = "he";
+        }
+        else {
+            return this.genderpass = "she"
+        }
     }
 }
 
 
 
-// Ramki is 27 years old Web Developer, and he has a driver's lisence.
+// Output: Ramki is 27 years old Web Developer, and he has a driver's lisence.
 
-console.log(Ramki.age);
-console.log(Ramki.age);
-console.log(Ramki.age);
 
+console.log(`${person.firstName} is ${person.calcAge()} years old ${person.job}, and ${person.genderStatus()} has ${person.JobStatus()}`);
+*/
