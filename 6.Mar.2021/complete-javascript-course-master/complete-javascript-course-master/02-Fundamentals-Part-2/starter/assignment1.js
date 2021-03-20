@@ -122,7 +122,9 @@ console.log(describePopulation("china", 1441));
 console.log(describePopulation("USA", 332));
 */
 
-/*
+
+
+/* // Basic Array
 const country = "India";
 function percentageOfWorld1(population) {
     let worldPopulation = 7900;
@@ -157,8 +159,10 @@ neighbours[neighbours.indexOf('Srilanka')] = 'Republic of Sweden';
 
 console.log(neighbours);*/
 
+
 /*
 // Object Methods with Perosn discribe
+
 const person = {
     firstName: 'Ramki',
     lastName: 'Yogalingam',
