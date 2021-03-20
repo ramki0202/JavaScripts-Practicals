@@ -156,3 +156,25 @@ if (!neighbours.includes('Germany')) {
 neighbours[neighbours.indexOf('Srilanka')] = 'Republic of Sweden';
 
 console.log(neighbours);*/
+const Ramki = {
+    firstName: 'Ramki',
+    lastName: 'Yogalingam',
+    birthYeah: 1994,
+    job: 'Web Developer',
+    friends: ['Ramesh', 'Eniya', 'Jamal'],
+    driverLicense: true,
+
+    calcAge: function () {
+        this.age = 2021 - this.birthYeah;
+        return this.age;
+    }
+}
+
+
+
+// Ramki is 27 years old Web Developer, and he has a driver's lisence.
+
+console.log(Ramki.age);
+console.log(Ramki.age);
+console.log(Ramki.age);
+
