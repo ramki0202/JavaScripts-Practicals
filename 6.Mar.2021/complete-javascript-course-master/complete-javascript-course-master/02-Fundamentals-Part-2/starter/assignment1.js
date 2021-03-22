@@ -232,3 +232,6 @@ console.log(myCountry.checkIsland());
 
 
 //  LECTURE: Iteration: The for Loop
+for (var i = 1; i <= 50; i++) {
+
+}
