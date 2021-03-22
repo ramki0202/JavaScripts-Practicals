@@ -229,3 +229,6 @@ console.log(myCountry.checkIsland());
 /* console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people,${myCountry.neighbour.length} neighboring countries and a capital called ${myCountry.capital}`)
  myCountry['population'] = 118;
  console.log(`${myCountry.country} has ${myCountry.population} million ${myCountry.language}-speaking people,${myCountry.neighbour.length} neighboring countries and a capital called ${myCountry.capital}`)*/
+
+
+//  LECTURE: Iteration: The for Loop
