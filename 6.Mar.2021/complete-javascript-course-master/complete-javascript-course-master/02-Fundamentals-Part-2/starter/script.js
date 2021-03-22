@@ -54,7 +54,8 @@ const fruitCutsCount = function (apple, orange) {
     let orangecuts = cutFruitPiece(orange);
     return `juice with ${applecuts} of apple and ${orangecuts} of orange`;
 }
-console.log(fruitCutsCount(2, 3));*/
+console.log(fruitCutsCount(2, 3));
 for (var i = 1; i <= 10; i++) {
     console.log(`Lifting weights repitition ${i} 🏋️‍♀️`);
 }
+*/
