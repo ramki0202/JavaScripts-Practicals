@@ -176,6 +176,3 @@ if (mark.calcBMI() > john.calcBMI()) {
 
 */
 
-for (var i = 1; i <= 10; i++) {
-    console.log(`Lifting weights repitition ${i} 🏋️‍♀️`);
-}
