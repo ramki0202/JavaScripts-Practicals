@@ -145,3 +145,37 @@ console.log(total);
 
 
 // Coding Challenge #3
+
+/*
+
+const mark = {
+    firstName: 'Mark Miller',
+    mass: 78,
+    height: 1.69,
+    calcBMI: function () {
+        return this.BMI = (this.mass) / (this.height ** 2);
+    }
+}
+const john = {
+    firstName: ('John Smith'),
+    mass: 70,
+    height: 1.55,
+    calcBMI: function () {
+        return this.BMI = (this.mass) / (this.height ** 2);
+    }
+}
+/*
+console.log(`${person1.calcBMI() > person2.calcBMI() ? `Mark's BMI (${person1.BMI}) is higher than John's BMI(${person2.BMI})!" }` : `John's BMI (${person2.BMI}) is higher than Mark's BMI(${person1.BMI})!" }` );
+
+console.log(mark.calcBMI(), john.calcBMI());
+if (mark.calcBMI() > john.calcBMI()) {
+    console.log(`${mark.firstName}'s BMI (${mark.BMI}) is higher than ${john.firstName} BMI(${person2.BMI})`);
+} else {
+    console.log(`${john.firstName} BMI (${john.BMI}) is higher than ${mark.firstName} BMI(${mark.BMI})`);
+}
+
+*/
+
+for (var i = 1; i <= 10; i++) {
+    console.log(`Lifting weights repitition ${i} 🏋️‍♀️`);
+}
