@@ -239,11 +239,14 @@ for (var i = 1; i <= 50; i++) {
 
 // expected output is Voter number 1 is currently voting
 const populations = [10, 1441, 332, 83];
-
+const percentages2 = [];
 function percentageOfWorld1(population) {
     let worldPopulation = 7900;
     return (population / worldPopulation) * 100;
 }
 
+for (let i = 0; i < populations.length; i++) {
+    percentages2.push(percentageOfWorld1(populations[i]));
+}
 
-console.log(percentageOfWorld1(population[0]));
+console.log(percentages2);
