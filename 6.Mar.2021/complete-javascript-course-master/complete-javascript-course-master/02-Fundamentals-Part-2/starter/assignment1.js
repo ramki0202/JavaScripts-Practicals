@@ -235,7 +235,7 @@ console.log(myCountry.checkIsland());
 /*
 for (var i = 1; i <= 50; i++) {
     console.log(`Voter number ${i} is currently voting`);
-}*/
+}
 
 // expected output is Voter number 1 is currently voting
 const populations = [10, 1441, 332, 83];
@@ -249,4 +249,4 @@ for (let i = 0; i < populations.length; i++) {
     percentages2.push(percentageOfWorld1(populations[i]));
 }
 
-console.log(percentages2);
+console.log(percentages2);*/
