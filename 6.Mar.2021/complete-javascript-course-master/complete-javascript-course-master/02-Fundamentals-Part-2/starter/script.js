@@ -58,4 +58,13 @@ console.log(fruitCutsCount(2, 3));
 for (var i = 1; i <= 10; i++) {
     console.log(`Lifting weights repitition ${i} 🏋️‍♀️`);
 }
-*/
+
+const gymExcercizer = ['Pushups', 'Pullups', 'Weal', 'Skiping', 'Workout'];
+const reputationCount = 3;
+
+for (var i = 1; i <= gymExcercizer.length; i++) {
+    console.log(`${i} Get Started ${gymExcercizer[i]} excersize`);
+    for (var j = 1; j <= 3; j++) {
+        console.log(`   ${gymExcercizer[i]} Reputation Count ${j} `);
+    }
+}*/
