@@ -141,13 +141,13 @@ console.log(tips);
 
 const total = [bills[0], bills[1], bills[2]];
 console.log(total);
-*/
+
 
 
 // Coding Challenge #3
 
-/*
 
+/*
 const mark = {
     firstName: 'Mark Miller',
     mass: 78,
@@ -164,8 +164,8 @@ const john = {
         return this.BMI = (this.mass) / (this.height ** 2);
     }
 }
-/*
-console.log(`${person1.calcBMI() > person2.calcBMI() ? `Mark's BMI (${person1.BMI}) is higher than John's BMI(${person2.BMI})!" }` : `John's BMI (${person2.BMI}) is higher than Mark's BMI(${person1.BMI})!" }` );
+
+
 
 console.log(mark.calcBMI(), john.calcBMI());
 if (mark.calcBMI() > john.calcBMI()) {
@@ -173,6 +173,25 @@ if (mark.calcBMI() > john.calcBMI()) {
 } else {
     console.log(`${john.firstName} BMI (${john.BMI}) is higher than ${mark.firstName} BMI(${mark.BMI})`);
 }
-
 */
 
+// Coding Challenge #4
+
+const bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let tips = [];
+let totals = [];
+
+for (let i = 0; i < bills.length; i++) {
+    if ((bills[i] >= 50) && (bills[i] <= 500)) {
+        tips.push((bills[i] * 15) / 100);
+        totals.push((bills[i] + tips[i]));
+        console.log(`${i + 1}:Your Bill ${bills[i]} Tip Value is ${tips[i]}, so total bill value is ${totals[i]}`);
+
+
+    } else {
+        tips.push((bills[i] * 20) / 100);
+        totals.push((bills[i] + tips[i]));
+        console.log(`${i + 1}:Your Bill ${bills[i]} Tip Value is ${tips[i]}, so total bill value is ${totals[i]}`);
+    }
+
+}
