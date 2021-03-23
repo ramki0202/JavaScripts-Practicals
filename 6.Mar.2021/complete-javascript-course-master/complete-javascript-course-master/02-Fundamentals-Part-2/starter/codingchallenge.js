@@ -196,6 +196,23 @@ for (let i = 0; i < bills.length; i++) {
 
 }
 
-function calcAverage() {
-    for (var i = 1; i < bills.length)
- }
+let sum = 0;
+let total;
+
+function calcAverage(arr) {
+
+    for (var i = 0; i < arr.length; i++) {
+        sum = sum + arr[i];
+
+    }
+
+    total = sum / arr.length;
+
+    return `The Total Amount of ${sum} average is ${total}`;
+
+
+}
+
+
+let diclare = calcAverage(tips);
+console.log(diclare);
