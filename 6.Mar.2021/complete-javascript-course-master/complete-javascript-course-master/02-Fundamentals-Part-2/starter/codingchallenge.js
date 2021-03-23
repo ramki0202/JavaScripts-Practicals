@@ -195,3 +195,7 @@ for (let i = 0; i < bills.length; i++) {
     }
 
 }
+
+function calcAverage() {
+    for (var i = 1; i < bills.length)
+ }
