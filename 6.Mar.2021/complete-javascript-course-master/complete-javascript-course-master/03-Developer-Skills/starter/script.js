@@ -2,6 +2,7 @@
 'use strict';
 // "... 17ºC in 1
 // days ... 21ºC in 2 days ... 23ºC in 3 days ..."
+/*
 const forcast1 = [17, 21, 23];
 const forcast2 = [12, 5, -5, 0, 4];
 const printForecast = function (arr) {
@@ -11,10 +12,15 @@ const printForecast = function (arr) {
 };
 
 printForecast(forcast);
-
+*/
+const forcast1 = [17, 21, 23];
+const forcast2 = [12, 5, -5, 0, 4];
 const printForecast = function (arr) {
-  for (var i = 0; i < arr.lenth; i++) {}
+  let days = arr.length;
+  return days;
+  //   for (var i = 0; i < arr.lenth; i++) {}
 };
+console.log(printForecast(forcast2));
 //problems
 // 1) easy to work with model string but problem with more than 3 data.
 //2)
