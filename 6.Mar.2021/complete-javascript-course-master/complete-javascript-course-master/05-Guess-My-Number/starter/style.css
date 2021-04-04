@@ -94,7 +94,12 @@ h1 {
   display: block;
   margin-bottom: 3rem;
 }
-
+.name_holder {
+  font-family: inherit;
+  color: inherit;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
 .name {
   background: none;
   border: 4px solid #eee;
@@ -106,6 +111,16 @@ h1 {
   text-align: center;
   display: block;
 }
+.again {
+  border: none;
+  background-color: rgb(216, 20, 20);
+  color: rgb(255, 255, 255);
+  font-size: 2rem;
+  font-family: inherit;
+  padding: 2rem 3rem;
+  cursor: pointer;
+}
+
 .btn {
   border: none;
   background-color: #eee;
