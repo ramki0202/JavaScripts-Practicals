@@ -34,6 +34,8 @@ document.querySelector('.check').addEventListener('click', function () {
         '.message'
       ).textContent = `hi ${name}  You Entered Correct Number🙌`;
       document.querySelector('.number').textContent = ans;
+      document.querySelector('body').style.backgroundColor = '#60b347';
+      document.querySelector('.number').style.width = '25rem';
     } else if (ans < number) {
       if (score <= 1) {
         document.querySelector('.message').textContent = 'Game Over😞';
