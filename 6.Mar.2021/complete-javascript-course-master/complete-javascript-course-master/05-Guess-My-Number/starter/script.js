@@ -22,7 +22,6 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector(
         '.message'
       ).textContent = `Sorry ${name}  it's Not a numbe⛔`;
-      document.querySelector('.number').textContent = ans;
       const original = (document.querySelector('.guess').value = ans);
       score--;
       document.querySelector('.score').textContent = score;
@@ -35,17 +34,15 @@ document.querySelector('.check').addEventListener('click', function () {
       ).textContent = `hi ${name}  You Entered Correct Number🙌`;
       document.querySelector('.number').textContent = ans;
       document.querySelector('body').style.backgroundColor = '#60b347';
-      document.querySelector('.number').style.width = '25rem';
+      document.querySelector('.number').style.width = '20rem';
     } else if (ans < number) {
       if (score <= 1) {
         document.querySelector('.message').textContent = 'Game Over😞';
-        document.querySelector('.number').textContent = ans;
         const original = (document.querySelector('.guess').value = ans);
       } else {
         document.querySelector(
           '.message'
         ).textContent = `Sorry ${name}  You Entered too low😢`;
-        document.querySelector('.number').textContent = ans;
         const original = (document.querySelector('.guess').value = ans);
         score--;
         document.querySelector('.score').textContent = score;
@@ -53,13 +50,12 @@ document.querySelector('.check').addEventListener('click', function () {
     } else if (ans > number) {
       if (score <= 1) {
         document.querySelector('.message').textContent = 'Game Over😞';
-        document.querySelector('.number').textContent = ans;
         const original = (document.querySelector('.guess').value = ans);
       } else {
         document.querySelector(
           '.message'
         ).textContent = `Sorry ${name}  You Entered too High😢`;
-        document.querySelector('.number').textContent = ans;
+
         const original = (document.querySelector('.guess').value = ans);
         score--;
         document.querySelector('.score').textContent = score;
