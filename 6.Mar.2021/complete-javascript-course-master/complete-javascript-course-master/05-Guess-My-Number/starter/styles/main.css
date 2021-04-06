@@ -1,0 +1,156 @@
+@import url("https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap");
+
+body {
+  font-family: "Press Start 2P", sans-serif;
+  color: #eee;
+  background-color: #222;
+  box-sizing: border-box;
+}
+* {
+  text-decoration: none;
+}
+a {
+  color: rgb(45, 168, 216);
+}
+a:hover {
+  color: white;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.reset {
+  background-color: rgb(216, 20, 20);
+  color: white;
+  padding: 10px 15px 10px;
+}
+.reset:hover {
+  background-color: rgb(180, 23, 23);
+}
+.btm-cmn-part {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+.game-part {
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.guess-output {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 5px solid white;
+  font-size: 35px;
+}
+
+.number {
+  background-color: white;
+  color: black;
+  padding: 20px 35px 20px;
+  position: absolute;
+  top: 100px;
+  font-size: 50px;
+}
+
+.check {
+  background-color: white;
+}
+.guess-txt {
+  font-size: 40px;
+}
+.guess {
+  width: 150px;
+  margin: 0 auto;
+  background-color: transparent;
+  border: 4px solid #fff;
+  color: white;
+  font-size: 46px;
+}
+.check:hover {
+  background-color: #ccc;
+}
+.userName {
+  background-color: transparent;
+  border: 4px solid #fff;
+  color: white;
+  font-size: 18px;
+}
+.name_holder {
+  font-size: 16px;
+}
+
+.msg-emoji {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+.start-guess {
+  position: relative;
+  top: -25px;
+  width: 100px;
+  height: 100px;
+}
+
+@media only screen and (max-width: 600px) {
+  .guess-txt {
+    font-size: 22px;
+  }
+  .top-right-text {
+    font-size: 3vw;
+  }
+  .number {
+    font-size: 20px;
+  }
+  .userName {
+    padding: 5px !important;
+    margin-top: 10px !important;
+    font-size: 14px;
+  }
+  .guess {
+    padding: 10px !important;
+    font-size: 20px;
+  }
+  .check {
+    margin: 0px;
+  }
+  .name_holder {
+    margin: 0 auto;
+    margin-bottom: 5px;
+    padding-top: 10px;
+  }
+  .middle {
+    margin: 0 5px 5px !important;
+  }
+  .col-md-4 {
+    padding: 0 !important;
+  }
+  .right {
+    font-size: 14px !important;
+  }
+  .check {
+    font-size: 14px;
+    background-color: #fff;
+    padding: 15px 5px 15px 5px !important;
+    margin: 0 auto;
+  }
+  .right {
+    margin: 5px 0 5px 5px !important;
+  }
+  .fig {
+    margin-top: 50px;
+  }
+  .btm-cmn-part {
+  }
+}

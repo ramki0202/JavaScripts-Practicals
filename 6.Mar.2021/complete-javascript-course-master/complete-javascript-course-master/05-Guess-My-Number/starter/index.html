@@ -1,36 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Guess My Number!</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>FigForce's Guess My Number</title>
+
+    <link href="css/ekko-lightbox.css" rel="stylesheet" />
+    <link href="styles/bootstrap.css" rel="stylesheet" />
+    <link href="styles/main.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
-      <h1>Guess My Number!</h1>
-      <p class="between">(Between 1 and 20)</p>
-      <button class="again">Reset</button>
-      <div class="number">?</div>
-    </header>
-    <main>
-      <section>
-        <label class="name_holder">Enter your name:</label>
-        <input type="text" class="name" />
-      </section>
-      <section class="left">
-        <input type="number" class="guess" />
-        <button class="btn check">Check!</button>
-      </section>
-      <section class="right">
-        <p class="message">Start guessing...</p>
-        <p class="label-score">💯 Score: <span class="score">20</span></p>
-        <p class="label-highscore">
-          🥇 Highscore: <span class="highscore">0</span>
-        </p>
-      </section>
-    </main>
-    <script src="script.js"></script>
+    <div class="header">
+      <button class="btn m-3 reset">Reset</button>
+      <p class="top-right-text m-3">(Between 1 and 50)</p>
+    </div>
+    <div class="guess-output text-center">
+      <p class="guess-txt">
+        Guess My Number!<img src="images/angel.gif" alt="" width="80px" />
+      </p>
+      <p class="number">?</p>
+    </div>
+    <div class="container-fluid game-part">
+      <div class="row">
+        <div class="col-md-4">
+          <div class="left btm-cmn-part mt-5">
+            <label class="name_holder">Enter your name</label>
+            <input type="text" class="userName p-3" />
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="middle btm-cmn-part m-5 text-center">
+            <label class="name_holder text-center">Guess Number</label>
+            <input type="number" class="guess p-3" />
+            <button class="btn check p-3 m-3 text-center">Check!</button>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="right btm-cmn-part mt-5">
+            <div class="msg-emoji">
+              <p class="message">Start guessing...</p>
+              <img
+                class="start-guess"
+                src="images/guess.gif"
+                alt=""
+                width="100px"
+                ;
+              />
+            </div>
+            <p class="label-score">💯 Score: <span class="score">10</span></p>
+            <p class="label-highscore">
+              🥇 Highscore: <span class="highscore">0</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container text-center mt-5">
+      <div class="row">
+        <div class="col-md-12 fig">
+          Made by <a href="https://figforce.com/">FigForce</a>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/main.js"></script>
   </body>
+  <html></html>
 </html>
