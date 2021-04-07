@@ -6,7 +6,7 @@ const message = function (message) {
 //game over function
 const gameOver = function () {
   document.querySelector('.message').style.fontSize = '30px';
-  document.querySelector('.message').textContent = `Game Over🎮`;
+  message('Game Over🎮');
   document.querySelector('.start-guess').src = 'images/tired.gif';
   document.querySelector('body').style.backgroundColor = 'rgb(238, 77, 77)';
   document.querySelector('.reset').style.backgroundColor = '#60b347';
@@ -36,9 +36,7 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   } else {
     if (userGuess === secretNumber) {
-      document.querySelector(
-        '.message'
-      ).textContent = `hi ${userName} Your Guess is Correct.!🥇`;
+      message(`hi ${userName} Your Guess is Correct.!🥇`);
       document.querySelector('.message').style.fontSize = '26px';
       document.querySelector('.number').textContent = secretNumber;
       document.querySelector('.start-guess').src = 'images/claps.gif';
@@ -53,18 +51,19 @@ document.querySelector('.check').addEventListener('click', function () {
       } else {
         document.querySelector('.message').textContent =
           userGuess > secretNumber
-            ? 'Your Guess is Too High..!📈'
-            : ' Your Guess is Too Low..!📈';
+            ? `hi ${userName} Your Guess is Too High..!📈`
+            : `hi ${userName} Your Guess is Too Low..!📈`;
         document.querySelector('.start-guess').src = 'images/sad.gif';
+        userScore--;
+        document.querySelector('.score').textContent = userScore;
       }
     }
   }
 });
-
 //Reset button addEvent
 document.querySelector('.reset').addEventListener('click', function () {
   secretNumber = Math.trunc(Math.random() * 50) + 1;
-  document.querySelector('.message').textContent = 'Start guessing...';
+  message('Start guessing...');
   document.querySelector('.start-guess').src = 'images/guess.gif';
   document.querySelector('.number').textContent = '?';
   document.querySelector('body').style.backgroundColor = '#222222';
