@@ -18,6 +18,7 @@ body {
   color: #333;
   background-image: linear-gradient(to top left, #753682 0%, #bf2e34 100%);
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
