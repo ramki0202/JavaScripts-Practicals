@@ -4,6 +4,7 @@
 const model = document.querySelector(".model");
 const overlay = document.querySelector(".overlay");
 const overlay2 = document.querySelector(".overlay2");
+const overlay3 = document.querySelector(".overlay3");
 const iButton = document.querySelector(".i-btn");
 const closeBtn = document.querySelector(".close-modal");
 iButton.addEventListener("click", function () {
@@ -30,7 +31,7 @@ let scoreAddition = 0;
 let playerbox = document.querySelector(".player--acitve");
 const player0HighScore = document.querySelector(".player0-highscore");
 const player2HighScore = document.querySelector(".player1-highscore");
-let dices = document.getElementById("dice");
+let dices = document.querySelector(".dice");
 const newGame = document.querySelector(".new-game");
 const rollDice = document.querySelector(".roll-dice");
 const hold = document.querySelector(".hold");
@@ -44,28 +45,22 @@ const playerName1 = document.querySelector(".player1");
 const playerName2 = document.querySelector(".player2");
 const playBtn = document.querySelector(".play-btn");
 const playerGameBox = document.querySelector(".player-name");
+// const diceEl = document.querySelector(".dice");
 
 // let images = Math.trunc(Math.random() * 6) + 1;
 playBtn.addEventListener("click", function () {
   playerName1.textContent = playerNameInput1.value;
   playerName2.textContent = playerNameInput2.value;
   playerGameBox.classList.toggle("hidden");
+  overlay3.classList.toggle("hidden");
 });
 
-let images = [],
-  index = 1;
-images[0] = "/images/dice-1.png";
-images[1] = "/images/dice-2.png";
-images[2] = "/images/dice-3.png";
-images[3] = "/images/dice-4.png";
-images[4] = "/images/dice-5.png";
-images[5] = "/images/dice-6.png";
-
 rollDice.addEventListener("click", function () {
-  index = Math.floor(Math.random() * images.length);
+  let index = Math.trunc(Math.random() * 6) + 1;
   dices.classList.remove("hidden");
-  dice.src = images[index];
-  index++;
+  dices.src = `images/dice-${index}.png`;
+  console.log(`dice-${index}.png`);
+
   if (index !== 1) {
     scoreAddition += index;
     document.querySelector(
@@ -86,27 +81,31 @@ hold.addEventListener("click", function () {
   score[activePlayer] += scoreAddition;
   document.querySelector(`.player${activePlayer}-highscore`).textContent =
     score[activePlayer];
-  if (score[activePlayer] >= 30) {
-    // if ((acitvePlayer = 0)) {
-    //   acitvePlayer = playerName1.textContent;
-    // } else {
-    //   acitvePlayer = playerName1.textContent;
-    // }
-    console.log(activePlayer);
-    winMessage.textContent = `${playerNameInput1.value} Win the match`;
+  if (score[activePlayer] >= 100) {
+    if (activePlayer == 0) {
+      activePlayer = playerName1.textContent;
+    } else {
+      activePlayer = playerName2.textContent;
+    }
+    winMessage.textContent = `${activePlayer} Won the match`;
     winMessage.classList.remove("hidden");
     overlay2.classList.remove("hidden");
     newGame.classList.remove("hidden");
-    scoreAddition = 0;
+    /*  scoreAddition = 0;
+    activePlayer = 0;
+    playerbox1.classList.toggle("player--acitve");
+    playerbox2.classList.toggle("player--acitve");
     document.querySelector(".player0-CurrentScore").textContent = 0;
     document.querySelector(".player1-CurrentScore").textContent = 0;
     document.querySelector(".player0-highscore").textContent = 0;
-    document.querySelector(".player1-highscore").textContent = 0;
+    document.querySelector(".player1-highscore").textContent = 0;*/
   } else {
     activePlayer = activePlayer == 0 ? 1 : 0;
     playerbox1.classList.toggle("player--acitve");
     playerbox2.classList.toggle("player--acitve");
-    player0Score.textContent = 0;
+    document.querySelector(
+      `.player${activePlayer}-CurrentScore`
+    ).textContent = 0;
     scoreAddition = 0;
   }
 });
@@ -118,13 +117,13 @@ newGame.addEventListener("click", function () {
   dices.classList.add("hidden");
   activePlayer = 0;
   scoreAddition = 0;
-  playerbox1.classList.toggle("player--acitve");
-  playerbox2.classList.toggle("player--acitve");
+  score = [0, 0];
+  playerbox1.classList.add("player--acitve");
+  playerbox2.classList.remove("player--acitve");
   document.querySelector(".player0-CurrentScore").textContent = 0;
   document.querySelector(".player1-CurrentScore").textContent = 0;
   document.querySelector(".player0-highscore").textContent = 0;
   document.querySelector(".player1-highscore").textContent = 0;
-  score = [0, 0];
 });
 
 // logics1(if the starting point is score will be 0 and dice is hidden)
